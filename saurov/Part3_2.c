@@ -1,24 +1,21 @@
-#include<stdio.h>
-
+#include <stdio.h>
 
 int arr[100];
 
-
-int factor(int n, int arr[]){
+int factor(int n, int arr[])
+{
 
     int count = 0;
     for (int i = 1; i < n; i++)
     {
-        if (n%i==0)
+        if (n % i == 0)
         {
             count++;
-            arr[i-1]=i;
+            arr[i] = i;
         }
-        
     }
 
     return count;
-    
 }
 
 int main()
@@ -32,13 +29,8 @@ int main()
     {
         printf("%d ", arr[i]);
     }
-        printf("\n");
+    printf("\n");
 
     printf("total number of factors= %d\n", factor(n, arr));
-    
-
-
-
-
-
 }
+

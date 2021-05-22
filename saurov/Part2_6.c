@@ -28,11 +28,14 @@ int main()
         scanf("%d", &arr[i]);
     }
 
+
+            // 4 5 3 3 4 
+
     int maxElement=0, count;
     int maxC = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) 
     {
-        count = 1;
+        count = 1; // 5 6 5 2 3
         for (int j = i + 1; j < n; j++)
         {
             if (arr[j] == arr[i])

@@ -13,9 +13,10 @@ int maxNumber(int arr[])
     int max = arr[0];
 
     return max;
-}
+}       
 
-int countEquals(int arr[]){
+int countEquals(int arr[])
+{
     int count = 0;
     for (int i = 0; i < 5; i++)
     {
@@ -27,8 +28,11 @@ int countEquals(int arr[]){
     return count;
 }
 
+
+
 int main()
 {
+
     int n;
     int arr[5];
     for (int i = 0; i < 5; i++)
@@ -38,10 +42,7 @@ int main()
         arr[i] = n;
     }
 
-
-
     printf("max number = %d\n", maxNumber(arr));
-    
 
     printf("total number of equals: %d\n", countEquals(arr));
 }
